@@ -35,7 +35,7 @@ const EditRestaurant = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .put(`http://localhost:8000/api/restaurants/${id}`, restaurant)
+      .put(`https://restuarant-crud-operation-2.onrender.com/api/restaurants/${id}`, restaurant)
       .then((response) => {
         toast.success(response.data.msg, { position: "top-right" });
         navigate("/");
