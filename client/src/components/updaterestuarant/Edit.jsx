@@ -23,7 +23,7 @@ const EditRestaurant = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/restaurants/${id}`)
+      .get(`https://restuarant-crud-operation-2.onrender.com/api/restaurants/${id}`)
       .then((response) => {
         setRestaurant(response.data);
       })
