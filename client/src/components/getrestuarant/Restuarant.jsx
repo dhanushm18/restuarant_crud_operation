@@ -25,7 +25,7 @@ const Restaurant = () => {
   const deleteRestaurant = async (restaurantId) => {
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/restaurants/${restaurantId}`
+        `https://restuarant-crud-operation-2.onrender.com/api/restaurants/${restaurantId}`
       );
       setRestaurants((prevRestaurants) =>
         prevRestaurants.filter((restaurant) => restaurant._id !== restaurantId)
