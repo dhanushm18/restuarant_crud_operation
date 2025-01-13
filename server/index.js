@@ -12,7 +12,7 @@ import router from './routes/restaurantRoutes.js'
 app.use(cors());
 app.use(bodyParser.json());
 
-const PORT=process.env.PORT
+const PORT=process.env.PORT || 10000
 
 const url=process.env.MONGO_URL;
 mongoose.connect(url).then(()=>{
