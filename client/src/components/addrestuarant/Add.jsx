@@ -23,7 +23,7 @@ const Add = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8000/api/restaurants", restaurant);
+      const res = await axios.post("https://restuarant-crud-operation-2.onrender.com/api/restaurants", restaurant);
       toast.success(res.data.msg, { position: "top-right" });
       navigate("/");
     } catch (error) {
