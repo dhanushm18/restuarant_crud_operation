@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
-import './Edit.css'; 
+import 'client/src/components/updaterestuarant/Edit.css'; 
 
 const EditRestaurant = () => {
   const defaultRestaurant = {
