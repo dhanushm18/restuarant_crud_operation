@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
-import './Restaurant.css'; 
+import 'client/src/components/getrestuarant/Restaurant.css'; 
 
 
 const Restaurant = () => {
